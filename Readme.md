@@ -1,16 +1,16 @@
-#YiiSmartyViewRenderer
-##Basic renderer for Yii and Smarty.
+# YiiSmartyViewRenderer
+## Basic renderer for Yii and Smarty.
 ## Requirements
 `Smarty 3`
 `Yii 1.x`
 `Php >= 5.2`
-##Clone the renderer and smarty
-#####1.- Clone Smarty in your vendor directory. In mi proyect was in webroot/src/protected/vendors
+## Clone the renderer and smarty
+##### 1.- Clone Smarty in your vendor directory. In mi proyect was in webroot/src/protected/vendors
 ```
 webroot/src/protected/vendors/Smarty/...
 ```
 
-#####2.- Clone the repository in your vendor directory. In my current proyect create a `vendors` directory in webroot/src/protected/vendors
+##### 2.- Clone the repository in your vendor directory. In my current proyect create a `vendors` directory in webroot/src/protected/vendors
 ```
 webroot/src/protected/vendors/YiiSmartyViewRenderer/...
 ```
@@ -26,15 +26,15 @@ webroot/src/protected/vendors/YiiSmartyViewRenderer/...
     ...
 )
 ```
-##Create the template
-#####test.tpl for example in a partials directory `views/partials`
+## Create the template
+##### test.tpl for example in a partials directory `views/partials`
 ```
 <?php
 {$prop}
 {Yii::app()->user->id}
 ```
 
-##Invoke the view template with render or renderPartial
+## Invoke the view template with render or renderPartial
 ##### renderPartial() for example in the a create view `views/create.php`
 ##### Note: this create.php is a yii view not a smarty tpl, that is possible!!! :)
 ```
