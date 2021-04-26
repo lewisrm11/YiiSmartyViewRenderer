@@ -38,6 +38,8 @@ class YiiSmartyViewRenderer extends CApplicationComponent implements IViewRender
      */
     public function renderFile($context, $file, $data, $return)
     {
+        //pass the this object for access controller properties
+        $data['this'] = $context;
 
         //smarty object template
         $template = $this->_smarty->createTemplate($file, null, null, $data, true);
